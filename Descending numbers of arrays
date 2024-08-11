@@ -1,0 +1,29 @@
+package descendingOrder;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+public class descendingarrays {
+
+	public static void main(String[] args) {
+		Integer[] arr ={106,81,26,15,5};
+		for(int i=0;i<Array.getLength(arr);i++) {
+			System.out.print(arr[i] + " ");
+			}
+		int temp;
+        for(int i=0;i<arr.length;i++) {
+        	for(int j=i;j<arr.length;j++) {
+        		if(arr[i] > arr[j]) {
+        			temp = arr[i];
+        			arr[i] = arr[j];
+        			arr[j] = temp;
+        		}
+        	}
+        }
+	
+		
+	}
+
+
+	}
+
