@@ -1,0 +1,27 @@
+Commiting filespackage descendingOrder;
+
+
+public class minElementsinArray {
+
+	public static void main(String[] args) {
+		
+		int[] n = {106,81,26,15,5};
+		
+		int min = n[0];
+		int max = n[0];
+		
+		for(int i = 0; i < n.length; i++) {
+			
+			if(n[i] < min) {
+				min = n[i];
+			}
+			
+			if(n[i] > max) {
+				max = n[i];
+			}
+		}
+		
+		System.out.println(" Minimum " + min + " Maximum " + max);
+	}
+}
+		
